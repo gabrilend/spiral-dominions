@@ -8,12 +8,23 @@
 -- Title and image file
 #dom2title Spiral Dominions
 #imagefile Spiral Dominions (Summer).tga
--- #winterimagefile myfilename.tga
+#winterimagefile Spiral Dominions (Winter).tga
 #mapsize 1285 1114
 #domversion 450
 -- #maptextcol 0.0 0.0 0.0 1.0
 -- #mapdomcol 255 242 160 25
-#description "Spiral Dominions!\n\nA map for four players, two land and two underwater.\n\n7 thrones.\n\nDescription:\nMagic is draining from the world! The cold chill of death is ever-present at the center of the spiral, drawing the magic to the center of the world for some nefarious purpose. The edges of the spiral are warmer, both in the forests and the caves. The purple icons are giant cannons that launch armies across the map - I assure you, the physics are quite sound. A neutral temperature scale is fairly valuable here since there are many terrain hazards you'll need to cross, and a chance for travel in three out of 12 of the months in a year is better than being blocked forever. Luckily indy recruits should be able to supplement any shortcomings your armies may have - but beware the vampires in the farms across the river!\n\nThe Spiral awaits..."
+#description "Spiral Dominions!
+
+A map for four players, two land and two underwater.
+
+7 thrones.
+
+For a disciple game, have one player on each team be land and the other underwater.
+
+Description:
+Magic is draining from the world! The cold chill of death is ever-present at the center of the spiral, drawing the magic to the center of the world for some nefarious purpose. The edges of the spiral are warmer, both in the forests and the caves. The purple icons are giant cannons that launch armies across the map - I assure you, the physics are quite sound. A neutral temperature scale is fairly valuable here since there are many terrain hazards you'll need to cross, and a chance for travel in three out of 12 of the months in a year is better than being blocked forever. Luckily indy recruits should be able to supplement any shortcomings your armies may have - but beware the vampires in the farms across the river! The perils of the deep sea should not be underestimated, either... Good luck, and may the best Pantokrator win!
+
+The Spiral awaits..."
 
 -- Custom province code
 
@@ -112,30 +123,38 @@
 -- Shrimp Soldiers (underwater cave entrance)
 
 #land 8
+#poptype 85
 #commander "Bishop Fish"
 #bodyguards 2 "Shrimp Soldier"
-#units 12 "Shrimp Soldier"
+#units 10 "Shrimp Soldier"
+#units 5 "Kappa"
 
 #commander "Bishop Fish"
 #bodyguards 2 "Shrimp Soldier"
-#units 12 "Shrimp Soldier"
+#units 10 "Shrimp Soldier"
+#units 5 "Kappa"
 
 #commander "Bishop Fish"
 #bodyguards 2 "Shrimp Soldier"
-#units 12 "Shrimp Soldier"
+#units 10 "Shrimp Soldier"
+#units 5 "Kappa"
 ------------------------------------
 #land 116
+#poptype 85
 #commander "Bishop Fish"
 #bodyguards 2 "Shrimp Soldier"
-#units 12 "Shrimp Soldier"
+#units 10 "Shrimp Soldier"
+#units 5 "Kappa"
 
 #commander "Bishop Fish"
 #bodyguards 2 "Shrimp Soldier"
-#units 12 "Shrimp Soldier"
+#units 10 "Shrimp Soldier"
+#units 5 "Kappa"
 
 #commander "Bishop Fish"
 #bodyguards 2 "Shrimp Soldier"
-#units 12 "Shrimp Soldier"
+#units 10 "Shrimp Soldier"
+#units 5 "Kappa"
 
 
 
@@ -382,6 +401,11 @@
 #commander "Demon Knight"
 #additem "Harvest Blade"
 #bodyguards 10 "Knight of the Unholy Sepulchre"
+
+#commander "Dying Treelord"
+#units 35 "Longdead Markata"
+#units 20 "Ghoul"
+#units 25 "Manikin"
 ------------------------------------
 #land 19
 #knownfeature "The Slaughterhouse"
@@ -398,6 +422,10 @@
 #additem "Harvest Blade"
 #bodyguards 10 "Knight of the Unholy Sepulchre"
 
+#commander "Dying Treelord"
+#units 35 "Longdead Markata"
+#units 20 "Ghoul"
+#units 25 "Manikin"
 
 
 -- hot forest cannon
@@ -447,16 +475,22 @@
 #units 3 "Vine Ogre"
 #units 15 459
 
+
+
 -- middle wasteland
 #land 43
+#poptype 43
 
 #commander "Released Sage"
+#additem "Boots of Stone"
 #bodyguards 5 "Released One"
 
 #commander "Released Sage"
+#additem "Boots of Stone"
 #bodyguards 5 "Released One"
 
 #commander "Released Sage"
+#additem "Boots of Stone"
 #bodyguards 5 "Released One"
 
 #commander "Released King"
@@ -467,14 +501,18 @@
 #units 15 "Released Warrior"
 ------------------------------------
 #land 81
+#poptype 43
 
 #commander "Released Sage"
+#additem "Boots of Stone"
 #bodyguards 5 "Released One"
 
 #commander "Released Sage"
+#additem "Boots of Stone"
 #bodyguards 5 "Released One"
 
 #commander "Released Sage"
+#additem "Boots of Stone"
 #bodyguards 5 "Released One"
 
 #commander "Released King"
@@ -484,33 +522,288 @@
 #units 15 "Released Warrior"
 #units 15 "Released Warrior"
 
--- edge of ice
-#land 63
-------------------------------------
-#land 61
+
 
 -- middle of ice
 #land 55
+#poptype 96
+#knownfeature "Death Mound Downs"
+
+#commander "Unfettered"
+
+#commander "Unfrozen Mage"
+#additem "Ice Pebble Staff"
+#bodyguards 2 "Unfrozen"
+
+#commander "Unfrozen Mage"
+#additem "Crown of Lead"
+#bodyguards 2 "Unfrozen"
+
+#commander "Unfrozen Mage"
+#additem "The Flailing Hands"
+#bodyguards 2 "Unfrozen"
+
+#commander "Unfrozen Lord"
+#additem "Spirit Mask"
+#additem "Bane Blade"
+#bodyguards 5 "Unfrozen Warrior"
+#units 15 "Unfrozen Warrior"
+#units 15 "Unfrozen Warrior"
+#units 60 "Unfrozen"
 ------------------------------------
 #land 69
+#poptype 96
+#knownfeature "Death Mound Downs"
+
+#commander "Unfettered"
+
+#commander "Unfrozen Mage"
+#additem "Ice Pebble Staff"
+#bodyguards 2 "Unfrozen"
+
+#commander "Unfrozen Mage"
+#additem "Crown of Lead"
+#bodyguards 2 "Unfrozen"
+
+#commander "Unfrozen Mage"
+#additem "The Flailing Hands"
+#bodyguards 2 "Unfrozen"
+
+#commander "Unfrozen Lord"
+#additem "Spirit Mask"
+#additem "Bane Blade"
+#bodyguards 5 "Unfrozen Warrior"
+#units 15 "Unfrozen Warrior"
+#units 15 "Unfrozen Warrior"
+#units 60 "Unfrozen"
+
+
+
+-- edge of ice
+#land 63
+#poptype 34
+#knownfeature "Frost Vale"
+
+#commander "Ice Druid"
+#bodyguards 5 1285
+#units 10 "Ice Warrior"
+#units 5 1628
+#units 5 1629
+
+#commander "Ice Druid"
+#bodyguards 5 1285
+#units 10 "Ice Warrior"
+#units 5 1628
+#units 5 1629
+
+
+#commander "Ice Druid"
+#bodyguards 5 1285
+#units 10 "Ice Warrior"
+#units 5 1628
+#units 5 1629
+
+#commander 265
+#units 15 "Ice Drake"
+------------------------------------
+#land 61
+#poptype 34
+#knownfeature "Frost Vale"
+
+#commander "Ice Druid"
+#bodyguards 5 1285
+#units 10 "Ice Warrior"
+#units 5 1628
+#units 5 1629
+
+#commander "Ice Druid"
+#bodyguards 5 1285
+#units 10 "Ice Warrior"
+#units 5 1628
+#units 5 1629
+
+
+#commander "Ice Druid"
+#bodyguards 5 1285
+#units 10 "Ice Warrior"
+#units 5 1628
+#units 5 1629
+
+#commander 265
+#units 15 "Ice Drake"
+
+
 
 -- ice throne
 #land 62
+#poptype 40
+#knownfeature "The Hidden Kingdom of Elludia"
+#knownfeature "The Draining Stone"
+
+#commander 182
+#bodyguards 10 181
+#units 10 181
+
+#commander 182
+#bodyguards 10 181
+#units 10 181
+
+#commander "Wight Shaman"
+#units 5 "Tupalik"
+#units 5 "Tupalik"
+#units 5 "Tupalik"
+
+#commander "Wight Shaman"
+#units 5 "Tupalik"
+#units 5 "Tupalik"
+#units 5 "Tupalik"
+
+#commander "Wight Shaman"
+#units 5 "Tupalik"
+#units 5 "Tupalik"
+#units 5 "Tupalik"
+
+#commander 772
+#units 40 "Longdead"
+#units 20 "Longdead Giant"
+
+#commander 773
+#units 40 "Longdead"
+
+#commander 776
+#units 40 "Longdead"
+
+#commander 777
+#units 40 "Longdead"
+
+#commander 644
+#units 40 "Longdead"
+
+
+
 
 -- outer water ice
 #land 49
+#knownfeature "The Wasted Sea"
+
+#commander 3451
+#bodyguards 5 3452
+
+#commander 3451
+#bodyguards 5 3452
+
+#commander 3451
+#bodyguards 5 3452
+
+#commander 3195
+#additem "Shademail Haubergeon"
+#bodyguards 5 2367
+#units 10 2364
+#units 5 2365
+#units 5 2366
+#units 25 "Soulless of Atlantis"
+
+
+#commander 3195
+#additem "Standard of the Damned"
+#bodyguards 5 2367
+#units 10 2364
+#units 5 2365
+#units 5 2366
+#units 25 "Soulless of Atlantis"
+
+
+#commander 3195
+#additem "Skull Mentor"
+#bodyguards 5 2367
+#units 10 2364
+#units 5 2365
+#units 5 2366
+#units 25 "Soulless of Atlantis"
+
 ------------------------------------
 #land 75
+#knownfeature "The Wasted Sea"
+
+#commander 3451
+#bodyguards 5 3452
+
+#commander 3451
+#bodyguards 5 3452
+
+#commander 3451
+#bodyguards 5 3452
+
+#commander 3195
+#additem "Shademail Haubergeon"
+#bodyguards 5 2367
+#units 10 2364
+#units 5 2365
+#units 5 2366
+#units 25 "Soulless of Atlantis"
+
+
+#commander 3195
+#additem "Standard of the Damned"
+#bodyguards 5 2367
+#units 10 2364
+#units 5 2365
+#units 5 2366
+#units 25 "Soulless of Atlantis"
+
+
+#commander 3195
+#additem "Skull Mentor"
+#bodyguards 5 2367
+#units 10 2364
+#units 5 2365
+#units 5 2366
+#units 25 "Soulless of Atlantis"
+
+
 
 -- inner water ice cannons
 #land 68
+
+#commander 907
+#additem "Crown of the Frost King"
+#bodyguards 5 831
+#units 4 832
+#units 6 833
+#units 8 834
+#units 12 835
+#units 16 836
+
+#commander 359
+#additem "Water Bottle"
+#bodyguards 25 "Undine"
+#units 30 "Undine"
+
 ------------------------------------
 #land 56
 
+#commander 907
+#additem "Crown of the Frost King"
+#bodyguards 5 831
+#units 4 832
+#units 6 833
+#units 8 834
+#units 12 835
+#units 16 836
+
+#commander 359
+#additem "Water Bottle"
+#bodyguards 25 "Undine"
+#units 30 "Undine"
+
+
+
 -- middle of desert (before tunnel, path to water caves)
-#land 109
+#setland 109
+#knownfeature "Temple of the Turning Tide"
 ------------------------------------
-#land 15
+#setland 15
+#knownfeature "Temple of the Turning Tide"
 
 
 
@@ -869,58 +1162,514 @@
 
 -- land mountains with river crossings
 #land 100
+#fort 3
+#lab
+#knownfeature "Azure Academy"
+
+#commander "Azure Initiate"
+#bodyguards 2 412
+
+#commander "Azure Initiate"
+#bodyguards 2 412
+
+#commander "Azure Initiate"
+#bodyguards 2 412
+
+#commander "Azure Initiate"
+#bodyguards 2 412
+
+#commander "Azure Initiate"
+#bodyguards 2 412
+
+#commander "Azure Mage"
+#randomequip 1
+#bodyguards 5 408
+#units 5 408
+#units 10 "Undine"
+
+#commander "Azure Mage"
+#randomequip 1
+#bodyguards 5 408
+#units 5 408
+#units 10 "Undine"
+
+#commander "Azure Mage"
+#randomequip 1
+#bodyguards 5 408
+#units 5 408
+#units 10 "Undine"
 ------------------------------------
 #land 24
+#fort 3
+#lab
+#knownfeature "Azure Academy"
+
+#commander "Azure Initiate"
+#bodyguards 2 412
+
+#commander "Azure Initiate"
+#bodyguards 2 412
+
+#commander "Azure Initiate"
+#bodyguards 2 412
+
+#commander "Azure Initiate"
+#bodyguards 2 412
+
+#commander "Azure Initiate"
+#bodyguards 2 412
+
+#commander "Azure Mage"
+#randomequip 1
+#bodyguards 5 408
+#units 5 408
+#units 10 "Undine"
+
+#commander "Azure Mage"
+#randomequip 1
+#bodyguards 5 408
+#units 5 408
+#units 10 "Undine"
+
+#commander "Azure Mage"
+#randomequip 1
+#bodyguards 5 408
+#units 5 408
+#units 10 "Undine"
+
+
 
 -- land highlands with river crossing (near capital)
-#land 51
+#setland 51
+#knownfeature "Ichtyid Enclave"
 ------------------------------------
-#land 73
+#setland 73
+#knownfeature "Ichtyid Enclave"
+
+
 
 -- land forest with river crossing near highlands
 #land 85
+#poptype 85
+
+#commander "Kappa Mage"
+#bodyguards 10 "Kappa"
+
+#commander "Kappa Mage"
+#bodyguards 10 "Kappa"
+
+#commander "Kappa Mage"
+#bodyguards 10 "Kappa"
+
+#commander "Kappa Mage"
+#bodyguards 10 "Kappa"
+
+#commander "Kappa Chief"
+#bodyguards 2 "Kappa"
+#units 20 "Kappa"
+
+#commander "Kappa Chief"
+#bodyguards 2 "Kappa"
+#units 20 "Kappa"
+
+#commander "Kappa Chief"
+#bodyguards 2 "Kappa"
+#units 20 "Kappa"
 ------------------------------------
 #land 39
+#poptype 85
+
+#commander "Kappa Mage"
+#bodyguards 10 "Kappa"
+
+#commander "Kappa Mage"
+#bodyguards 10 "Kappa"
+
+#commander "Kappa Mage"
+#bodyguards 10 "Kappa"
+
+#commander "Kappa Mage"
+#bodyguards 10 "Kappa"
+
+#commander "Kappa Chief"
+#bodyguards 2 "Kappa"
+#units 20 "Kappa"
+
+#commander "Kappa Chief"
+#bodyguards 2 "Kappa"
+#units 20 "Kappa"
+
+#commander "Kappa Chief"
+#bodyguards 2 "Kappa"
+#units 20 "Kappa"
+
+
 
 -- land hot forest with river crossing
 #land 12
+#knownfeature "Secluded Village"
+
+#commander "Hybrid Trooper"
+#additem "Boots of Water Walking"
+#bodyguards 5 969
+#units 15 968
+#units 15 969
+#units 15 970
+
+#commander "Hybrid Trooper"
+#additem "Boots of Water Walking"
+#bodyguards 5 969
+#units 15 968
+#units 15 969
+#units 15 970
+
+#commander "Hybrid Trooper"
+#additem "Boots of Water Walking"
+#bodyguards 5 969
+#units 15 968
+#units 15 969
+#units 15 970
+
+#commander "Hybrid Trooper"
+#additem "Boots of Water Walking"
+#bodyguards 5 969
+#units 15 968
+#units 15 969
+#units 15 970
 ------------------------------------
 #land 112
+#knownfeature "Secluded Village"
+
+#commander "Hybrid Trooper"
+#additem "Boots of Water Walking"
+#bodyguards 5 969
+#units 15 968
+#units 15 969
+#units 15 970
+
+#commander "Hybrid Trooper"
+#additem "Boots of Water Walking"
+#bodyguards 5 969
+#units 15 968
+#units 15 969
+#units 15 970
+
+#commander "Hybrid Trooper"
+#additem "Boots of Water Walking"
+#bodyguards 5 969
+#units 15 968
+#units 15 969
+#units 15 970
+
+#commander "Hybrid Trooper"
+#additem "Boots of Water Walking"
+#bodyguards 5 969
+#units 15 968
+#units 15 969
+#units 15 970
+
+
 
 -- land wasteland with river crossing near swamps
 #land 88
+#killfeatures
+#temple
+#knownfeature "Plaguewater Stream"
+#knownfeature "Plaguewater Oasis"
+#knownfeature "Abbey"
+#feature "The Martyr's Grave"
+#feature "Temple of the All-Seeing Eye"
+#feature "Brigand Lair"
+#feature "The Lodge"
+
+#commander "Brigand Leader"
+#bodyguards 2 "Villain"
+#units 30 "Villain"
+
+#commander "Nun"
+#bodyguards 5 "Blood Slave"
+#units 20 "Peasant"
+#units 10 30
+
+#commander "Nun"
+#bodyguards 5 "Blood Slave"
+#units 20 "Peasant"
+#units 10 30
+
+#commander "Nun"
+#bodyguards 5 "Blood Slave"
+#units 20 "Peasant"
+#units 10 30
+
+#commander 94
+#bodyguards 5 428
+#units 10 428
+
+#commander 94
+#bodyguards 5 428
+#units 10 428
+
+#commander 95
+#bodyguards 15 428
+#units 10 428
+#units 10 "Frost Fiend"
+#units 25 "Shadow Imp"
 ------------------------------------
 #land 36
+#killfeatures
+#temple
+#knownfeature "Plaguewater Stream"
+#knownfeature "Plaguewater Oasis"
+#knownfeature "Abbey"
+#feature "The Martyr's Grave"
+#feature "Temple of the All-Seeing Eye"
+#feature "Brigand Lair"
+#feature "The Lodge"
+
+#commander "Brigand Leader"
+#bodyguards 2 "Villain"
+#units 30 "Villain"
+
+#commander "Nun"
+#bodyguards 5 "Blood Slave"
+#units 20 "Peasant"
+#units 10 30
+
+#commander "Nun"
+#bodyguards 5 "Blood Slave"
+#units 20 "Peasant"
+#units 10 30
+
+#commander "Nun"
+#bodyguards 5 "Blood Slave"
+#units 20 "Peasant"
+#units 10 30
+
+#commander 94
+#bodyguards 5 428
+#units 10 428
+
+#commander 94
+#bodyguards 5 428
+#units 10 428
+
+#commander 95
+#bodyguards 15 428
+#units 10 428
+#units 10 "Frost Fiend"
+#units 25 "Shadow Imp"
+
+
 
 -- end of sea road with mountain pass to throne
 #land 80
+#poptype 95
+
+#commander "Damned Admiral"
+#additem "Sword of Swiftness"
+#additem "Rime Hauberk"
+#bodyguards 5 "Damned Boatswain"
+#units 35 "Longdead Boatswain"
+#units 35 "Longdead Buccaneer"
+#units 25 3361
+
+#commander "Damned Captain"
+#additem "Champion's Skull"
+#bodyguards 5 "Damned Buccaneer"
+#units 10 2123
+#units 10 2124
+
+#commander "Damned Captain"
+#additem "Skull Talisman"
+#bodyguards 5 "Damned Buccaneer"
+#units 15 194
+#units 15 "Longdead Boatswain"
 ------------------------------------
 #land 44
+#poptype 95
+
+#commander "Damned Admiral"
+#additem "Sword of Swiftness"
+#additem "Rime Hauberk"
+#bodyguards 5 "Damned Boatswain"
+#units 35 "Longdead Boatswain"
+#units 35 "Longdead Buccaneer"
+#units 25 3361
+
+#commander "Damned Captain"
+#additem "Champion's Skull"
+#bodyguards 5 "Damned Buccaneer"
+#units 10 2123
+#units 10 2124
+
+#commander "Damned Captain"
+#additem "Skull Talisman"
+#bodyguards 5 "Damned Buccaneer"
+#units 15 194
+#units 15 "Longdead Boatswain"
+
+
 
 -- desert near capital with mountain pass
-#land 21
+#setland 21
+#poptype 25
+#knownfeature "Barbarian Warcamp"
 ------------------------------------
-#land 103
+#setland 103
+#poptype 25
+#knownfeature "Barbarian Warcamp"
+
+
 
 -- farm surrounded by mountain passes and river to vampires
-#land 97
+#setland 97
+#killfeatures
+#feature "The Factory"
+#feature "Soul of the Wild"
+#knownfeature "Lost Vale of the Elders"
+#knownfeature "Hoburg Settlement"
+
+#commander "Gnome"
+#bodyguards 4 "Hoburg Pikemen"
+
+#commander "Hoburg Champion"
+#bodyguards 10 "Hoburg Defender"
+#units 35 "Hoburg Militia"
+#units 25 "Hoburg Crossbow"
+#units 15 "Hoburg Slinger"
+
+#commander "Hoburg Champion"
+#bodyguards 10 "Hoburg Defender"
+#units 15 "Hoburg Pikeman"
+#units 15 "Hoburg Spearman"
+
+#commander "Hoburg Priest"
+#bodyguards 5 "Hoburg Militia"
+
+#commander "Hoburg Priest"
+#bodyguards 5 "Hoburg Militia"
+
+#commander "Horticulturist"
+#bodyguards 5 "Hoburg Militia"
+#units 15 "Wolf"
+#units 15 "Scarecrow"
+#units 15 "Vine Man"
 ------------------------------------
-#land 27
+#setland 27
+#killfeatures
+#feature "The Factory"
+#feature "Soul of the Wild"
+#knownfeature "Lost Vale of the Elders"
+#knownfeature "Hoburg Settlement"
+
+#commander "Gnome"
+#bodyguards 4 "Hoburg Pikemen"
+
+#commander "Hoburg Champion"
+#bodyguards 10 "Hoburg Defender"
+#units 35 "Hoburg Militia"
+#units 25 "Hoburg Crossbow"
+#units 15 "Hoburg Slinger"
+
+#commander "Hoburg Champion"
+#bodyguards 10 "Hoburg Defender"
+#units 15 "Hoburg Pikeman"
+#units 15 "Hoburg Spearman"
+
+#commander "Hoburg Priest"
+#bodyguards 5 "Hoburg Militia"
+
+#commander "Hoburg Priest"
+#bodyguards 5 "Hoburg Militia"
+
+#commander "Horticulturist"
+#bodyguards 5 "Hoburg Militia"
+#units 15 "Wolf"
+#units 15 "Scarecrow"
+#units 15 "Vine Man"
+
+
+
 
 -- underwater mountains with mountain pass to deep sea
 #land 40
+#feature "Basalt Statue"
+#feature "Coral Statue"
+
+#commander "Watcher"
+#bodyguards 5 "Marble Lion"
+#units 15 "Watcher"
+#units 15 "Stone Monstra"
+#units 20 "Living Statue"
+#units 10 "Marble Lion"
 ------------------------------------
 #land 84
+#feature "Basalt Statue"
+#feature "Coral Statue"
+
+#commander "Watcher"
+#bodyguards 5 "Marble Lion"
+#units 15 "Watcher"
+#units 15 "Stone Monstra"
+#units 20 "Living Statue"
+#units 10 "Marble Lion"
+
+
+
 
 -- deep sea with mountain pass to underwater mountains and land pass to ice
 #land 70
+#knownfeature "Grove of Hooded Spirits"
+
+#commander "Laestrygonian"
+#units 35 "Terracotta Soldier"
+#units 50 "Clayman"
 ------------------------------------
 #land 54
+#knownfeature "Grove of Hooded Spirits"
+
+#commander "Laestrygonian"
+#units 35 "Terracotta Soldier"
+#units 50 "Clayman"
+
+
 
 -- deep sea with mountain pass to capital
 #land 42
+#knownsite "Enchanted Current"
+
+#commander "Ether Lord"
+#bodyguards 1 "Ether Warrior"
+#units 20 "Ether Warrior"
 ------------------------------------
 #land 82
+#knownsite "Enchanted Current"
+
+#commander "Ether Lord"
+#bodyguards 1 "Ether Warrior"
+#units 20 "Ether Warrior"
+
+
+
+-- middle temperate forest
+#land 72
+#poptype 62
+#knownfeature "The Primal Forest"
+
+#commander "Irminsul"
+#bodyguards 25 "Vine Man"
+#units 50 "Vine Man"
+#units 20 "Vine Ogre"
+
+#commander "Hamadryad"
+#bodyguards 10 "Woodland Spirit"
+#units 25 "Woodland Spirit"
+
+#commander "Hamadryad"
+#bodyguards 10 "Woodland Spirit"
+#units 25 "Woodland Spirit"
+------------------------------------
+#land 52
 
 -- Province names/terrains
 #terrain 1 536875072
